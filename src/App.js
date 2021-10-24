@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import AddNumberRoot from '/components/AddNumberRoot';
+import AddNumberRoot from './components/AddNumberRoot';
 import DisplayNumberRoot from './components/DisplayNumberRoot';
 
 
@@ -13,3 +13,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
