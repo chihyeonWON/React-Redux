@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <h1>Root</h1>
       <AddNumberRoot></AddNumberRoot>
-      <DisplayNumber></DisplayNumber>      
+      <DisplayNumberRoot></DisplayNumberRoot>      
     </div>
   );
 }
@@ -40,7 +40,18 @@ class DisplayNumber extends Component{
         <h1>Display Number</h1>
         <input type="text" value="0" readOnly></input>
       </div>
-    )
+    );
+  }
+}
+
+class DisplayNumberRoot extends Component {
+  render(){
+    return(
+      <div>
+        <h1>Display Number Root</h1>
+        <DisplayNumber></DisplayNumber>
+      </div>
+    );
   }
 }
 export default App;
