@@ -1,15 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-class AddNumberRoot extends Component {
-  render(){
-    return(
-      <div>
-        <h1>Add Number Root</h1>
-        <AddNumber></AddNumber>
-      </div>
-    )
-  }
-}
 
 function App() {
   return(
@@ -20,18 +10,6 @@ function App() {
     </div>
   );
 }
-
-class DisplayNumber extends Component{
-  render(){
-    return(
-      <div>
-        <h1>Display Number</h1>
-        <input type="text" value="0" readOnly></input>
-      </div>
-    );
-  }
-}
-
 class DisplayNumberRoot extends Component {
   render(){
     return(
