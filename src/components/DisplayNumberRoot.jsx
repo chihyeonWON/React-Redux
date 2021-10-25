@@ -3,7 +3,7 @@ import DisplayNumber from '../components/DisplayNumber';
 export default class DisplayNumberRoot extends Component {
   render(){
     return(
-      <div>
+      <div> 
         <h1>Display Number Root</h1>
         <DisplayNumber></DisplayNumber>
       </div>
