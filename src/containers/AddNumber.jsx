@@ -1,15 +1,17 @@
 import AddNumber from '../components/AddNumber';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-function mapReduxStateToReactProps(state) {
+function mapReduxDispatchToReactProps(dispatch) {
     return {
-        number:state.number
-    };
+        onClcik:function(size){
+            dispatch({
+                type:'INCREMENT',
+                size:size
+            })
+        }
+    }
 }
-function mapReduxDispatchToReactProps() {
-    return {};
-}
-export default connect(mapReduxStateToReactProps, mapReduxDispatchToReactProps)(AddNumber);
+export default connect(null, mapReduxDispatchToReactProps)(AddNumber);
 
 /*
 export default class extends Component {

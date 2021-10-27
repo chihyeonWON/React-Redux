@@ -25,7 +25,7 @@ export default class extends Component {
     }
     render(){
         return(
-            <DisplayNumber number={this.state.number}></DisplayNumber>
+            <DisplayNumber number={this.state.number} unit={this.props.unit}></DisplayNumber>
         )
     }
 } */
